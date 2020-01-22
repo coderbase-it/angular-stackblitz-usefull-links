@@ -3,7 +3,7 @@ export class Lien {
   constructor(
     public url: string,
     public name: string,
-    public category?: Category
+    public category: Category
   ) {}
 
   open() {

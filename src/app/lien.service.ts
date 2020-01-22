@@ -22,11 +22,10 @@ export class LienService {
               return {
                 category:data[0].category,
                 liens: data
-
               }
             }),
              toArray(),
-            tap(console.log)
+            //tap(console.log)
     )
   }
 
