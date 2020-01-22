@@ -1,11 +1,19 @@
-<h1>Stackblitz</h1>
+<h3>Stackblitz Angular Library App Links</h3>
 
-<ul class="list-group list-group-flush" 
- *ngFor='let elem of lienService.list | async'>
-  <h1>{{ elem.category }}</h1>
-  <li  class="list-group-item d-flex justify-content-between align-items-center"
-  *ngFor="let lien of elem.liens">
-    <a (click)="lien.open()">{{lien.name}}</a>
-      <span class="badge badge-primary badge-pill">1</span>
-  </li>
-</ul>    
+<a target="_blank" href="https://www.linkedin.com/in/pierrenédélec/">By Pierre Nédélec</a>
+
+
+<ul class="list-group list-group-flush" *ngFor='let elem of lienService.list | async'>
+
+	<li class="list-group-item d-flex justify-content-between align-items-center">
+		{{ elem.category }}
+		<span class="badge badge-primary badge-pill">
+      {{elem.liens.length}}</span>
+	</li>
+
+	<li class="list-group-item " *ngFor="let lien of elem.liens">
+		<a (click)="lien.open()">{{lien.name}}</a>
+
+	</li>
+
+</ul>
