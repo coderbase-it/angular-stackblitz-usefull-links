@@ -1,5 +1,5 @@
 export enum Category {
-  ANGULAR = 'Angular',
+  ANGULAR =  'Angular',
   JAVASCRIPT = 'Javascript',
   TYPESCRIPT = 'Typescript',
   REACT = 'React',

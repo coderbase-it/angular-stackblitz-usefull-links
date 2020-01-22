@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LienService } from './lien.service';
+import { LogoDirective } from './logo.directive';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, LogoDirective ],
   bootstrap:    [ AppComponent ],
   providers: [LienService]
 })
