@@ -1,0 +1,11 @@
+<h1>Stackblitz</h1>
+
+<ul class="list-group list-group-flush" 
+ *ngFor='let elem of lienService.list | async'>
+  <h1>{{ elem.category }}</h1>
+  <li  class="list-group-item d-flex justify-content-between align-items-center"
+  *ngFor="let lien of elem.liens">
+    <a (click)="lien.open()">{{lien.name}}</a>
+      <span class="badge badge-primary badge-pill">1</span>
+  </li>
+</ul>    
