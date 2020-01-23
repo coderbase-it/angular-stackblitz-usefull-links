@@ -6,3 +6,9 @@ img{
     height: 40px;
     margin-right: 14px;
 }
+li.link{
+  cursor: pointer
+}
+li.link:hover{
+  background: lightblue;
+}

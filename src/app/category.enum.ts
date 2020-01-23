@@ -3,6 +3,7 @@ export enum Category {
   JAVASCRIPT = 'Javascript',
   TYPESCRIPT = 'Typescript',
   REACT = 'React',
+  REACT_TS = 'React Ts',
   IONIC = 'Ionic',
   RXJS = 'Rxjs',
   SVELTE = 'Svelte',
